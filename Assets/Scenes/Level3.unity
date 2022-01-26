@@ -3686,7 +3686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83f6bb756086a149af77dbaca6bee01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   limit1: {fileID: 1594826243}
   limit2: {fileID: 677084597}
 --- !u!61 &2070092344

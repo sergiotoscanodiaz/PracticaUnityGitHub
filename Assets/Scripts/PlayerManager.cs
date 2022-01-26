@@ -8,7 +8,6 @@ public class PlayerManager : MonoBehaviour
 {
     public int speed;
     public int jumpForce;
-    public int dashForce;
     public int health;
     public int levelTime;
 

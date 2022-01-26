@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlatformMovement : MonoBehaviour
 {
-    public float speed;
-    public Transform limit1;
-    public Transform limit2;
+    [SerializeField] private float speed;
+    [SerializeField] private Transform limit1;
+    [SerializeField] private Transform limit2;
 
 
     private Transform followingPosition;
 
     void Start()
     {
+        speed = 5f;
         followingPosition = limit1;
     }
 

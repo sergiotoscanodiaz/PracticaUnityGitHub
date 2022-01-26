@@ -122,6 +122,10 @@ public class PlayerManager : MonoBehaviour
     public void PickUpPowerUp()
     {
         Invoke("UpdateHUDPowerUp", 0.2f);
+
+        health++;
+        hud.SetHealthTxt(health);
+
     }
 
     private void UpdateHUDPowerUp()

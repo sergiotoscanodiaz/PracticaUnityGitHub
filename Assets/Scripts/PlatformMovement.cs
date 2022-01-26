@@ -13,6 +13,7 @@ public class PlatformMovement : MonoBehaviour
 
     void Start()
     {
+        speed = 5f;
         followingPosition = limit1;
     }
 

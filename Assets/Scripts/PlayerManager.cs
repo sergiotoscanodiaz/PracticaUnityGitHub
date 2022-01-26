@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
-    public int speed;
-    public int jumpForce;
-    public int health;
+    [SerializeField] private int speed;
+    [SerializeField] private int jumpForce;
+    [SerializeField] private int health;
     public int levelTime;
 
     public int score;

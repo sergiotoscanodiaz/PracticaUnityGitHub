@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    public float speed;
-    public Vector3 endPosition;
+    [SerializeField] private float speed;
+    [SerializeField] private Vector3 endPosition;
 
     private Vector3 startPosition;
     private bool movingToEnd; 

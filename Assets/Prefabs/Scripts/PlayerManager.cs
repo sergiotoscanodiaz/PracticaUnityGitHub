@@ -105,7 +105,7 @@ public class PlayerManager : MonoBehaviour
         if(vulnerable)
         {
             vulnerable = false;
-            health--;
+            health -= 2;
             hud.SetHealthTxt(health);
             if (health == 0) GameOver();
             Invoke("MakeVulnerable", 1f);

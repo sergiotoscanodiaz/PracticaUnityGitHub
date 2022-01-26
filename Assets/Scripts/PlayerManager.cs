@@ -23,6 +23,7 @@ public class PlayerManager : MonoBehaviour
 
     private float startTime;
     private int wastedTime;
+    private int contador;
 
     private HUDManager hud;
 
@@ -54,9 +55,17 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
+        if (FloorTouching())
+        {
+            contador = 1;
+        }
         if(Input.GetKeyDown(KeyCode.Space) && FloorTouching())
         {
             physics.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            if (Input.GetKeyDown(KeyCode.Space) && contador == 1)
+            {
+                physics.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
         }
 
         if (physics.velocity.x > 0) sprite.flipX = false;

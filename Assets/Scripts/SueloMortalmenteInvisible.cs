@@ -24,4 +24,8 @@ public class SueloMortalmenteInvisible : MonoBehaviour
             collision.gameObject.GetComponent<PlayerManager>().GameOver();
         }
     }
+   
+    }
+
+    //Update no es necesario
 }
